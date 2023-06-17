@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8F8F8">
+
+
+        <TextView
+            android:id="@+id/excersie_selec_var"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="196dp"
+            android:layout_marginTop="156dp"
+            android:text="0"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/PushUp_Button"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="56dp"
+            android:background="@drawable/mybutton"
+            android:backgroundTint="#1AADAFB1"
+            android:contentDescription="@string/app_name"
+            android:onClick="PusUP"
+            android:scaleType="fitStart"
+            android:src="@drawable/wired_flat_1764_pushups"
+            app:layout_constraintBottom_toTopOf="@+id/DeadLift_Button"
+            app:layout_constraintStart_toStartOf="parent" />
+<!--        <ImageButton-->
+<!--            android:id="@+id/PushUp_Button"-->
+<!--            android:layout_width="151dp"-->
+<!--            android:layout_height="143dp"-->
+<!--            android:layout_marginStart="24dp"-->
+<!--            android:layout_marginBottom="56dp"-->
+<!--            android:background="@drawable/mybutton"-->
+<!--            android:backgroundTint="#1AADAFB1"-->
+<!--            android:contentDescription="@string/app_name"-->
+<!--            android:onClick="PusUP"-->
+<!--            android:scaleType="fitStart"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/DeadLift_Button"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:srcCompat="@drawable/wired_flat_1764_pushups" />-->
+
+        <TextView
+            android:id="@+id/PushUp_txt"
+            android:layout_width="110dp"
+            android:layout_height="39dp"
+            android:layout_above="@id/PushUp_Button"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="144dp"
+            android:text="Push Up"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/PushUp_Button"
+            tools:ignore="MissingConstraints,NotSibling"
+            tools:text="Push Up" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/Squat_Button"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="56dp"
+            android:background="@drawable/mybutton"
+            android:backgroundTint="#1AABABAB"
+            android:contentDescription="@string/app_name"
+            android:onClick="Squat"
+            android:scaleType="fitStart"
+            android:src="@drawable/com_video_to_gif_2_unscreen"
+            app:layout_constraintBottom_toTopOf="@+id/Log_Button"
+            app:layout_constraintEnd_toEndOf="parent" />
+<!--        <ImageButton-->
+<!--            android:id="@+id/Squat_Button"-->
+<!--            android:layout_width="151dp"-->
+<!--            android:layout_height="143dp"-->
+<!--            android:layout_marginEnd="24dp"-->
+<!--            android:layout_marginBottom="56dp"-->
+<!--            android:background="@drawable/mybutton"-->
+<!--            android:backgroundTint="#1AABABAB"-->
+<!--            android:contentDescription="@string/app_name"-->
+<!--            android:onClick="Squat"-->
+<!--            android:scaleType="fitStart"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/Log_Button"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:srcCompat="@drawable/com_video_to_gif_2_unscreen" />-->
+
+        <TextView
+            android:id="@+id/Squat_txt"
+            android:layout_width="110dp"
+            android:layout_height="39dp"
+            android:layout_above="@id/constraintLayout"
+            android:layout_marginTop="144dp"
+            android:layout_marginEnd="36dp"
+            android:text="Squat"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Squat_Button"
+            tools:text="Squat" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/DeadLift_Button"
+            android:layout_width="151dp"
+            android:layout_height="143dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="188dp"
+            android:src="@drawable/com_video_to_gif_unscreen"
+            android:background="@drawable/mybutton"
+            android:backgroundTint="#1AABABAB"
+            android:contentDescription="@string/app_name"
+            android:onClick="DeadLift"
+            android:scaleType="fitStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/DeadLift_Button"-->
+<!--            android:layout_width="151dp"-->
+<!--            android:layout_height="143dp"-->
+<!--            android:layout_marginStart="24dp"-->
+<!--            android:layout_marginBottom="188dp"-->
+<!--            android:background="@drawable/mybutton"-->
+<!--            android:backgroundTint="#1AABABAB"-->
+<!--            android:contentDescription="@string/app_name"-->
+<!--            android:onClick="DeadLift"-->
+<!--            android:scaleType="fitStart"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:srcCompat="@drawable/com_video_to_gif_unscreen"-->
+<!--            tools:ignore="MissingConstraints" />-->
+
+        <TextView
+            android:id="@+id/DeadLift_txt"
+            android:layout_width="110dp"
+            android:layout_height="39dp"
+            android:layout_above="@id/DeadLift_Button"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="168dp"
+            android:text="Dead Lift"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PushUp_txt"
+            tools:ignore="MissingConstraints,NotSibling"
+            tools:text="Dead Lift" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/Log_Button"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="188dp"
+            android:background="@drawable/mybutton"
+            android:backgroundTint="#1AABABAB"
+            android:contentDescription="@string/app_name"
+            android:onClick="Log"
+            android:scaleType="fitStart"
+            android:src="@drawable/wired_flat_56_document"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/Log_Button"-->
+<!--            android:layout_width="151dp"-->
+<!--            android:layout_height="143dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:layout_marginBottom="188dp"-->
+<!--            android:background="@drawable/mybutton"-->
+<!--            android:backgroundTint="#1AABABAB"-->
+<!--            android:contentDescription="@string/app_name"-->
+<!--            android:onClick="Log"-->
+<!--            android:scaleType="fitStart"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:srcCompat="@drawable/wired_flat_56_document"-->
+<!--            tools:ignore="MissingConstraints" />-->
+
+        <TextView
+            android:id="@+id/Log_txt"
+            android:layout_width="110dp"
+            android:layout_height="39dp"
+            android:layout_above="@id/PushUp_Button"
+            android:layout_marginTop="152dp"
+            android:layout_marginEnd="36dp"
+            android:text="Log"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Log_Button"
+            tools:ignore="MissingConstraints,NotSibling"
+            tools:text="Log" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="410dp"
+            android:layout_height="104dp"
+            android:background="@drawable/mypanel"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="2dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="60dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="#28D5D6D6"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/wired_outline_315_menu_2_morph"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.425"
+            app:layout_constraintStart_toStartOf="@+id/toolbar2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="381dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/mybutton"
+            android:backgroundTint="#031573"
+            android:contentDescription="@string/app_name"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/icons8_home_24"
+            app:tint="#98DAFF" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="82dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="132dp"
+            android:text="Dashboard"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
