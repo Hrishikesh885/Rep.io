@@ -42,3 +42,6 @@ Getting Support:
 If you encounter any issues or have questions regarding the application or code, feel free to open an issue in the repository. Our team and the community will be happy to help.
 
 Join us on this exciting journey to enhance fitness tracking with the power of Mediapipe and revolutionize the way people exercise. Let's make fitness accessible and enjoyable for everyone! Happy coding!
+
+To Get Started:
+Open build Gradle file, you can now test the app.
