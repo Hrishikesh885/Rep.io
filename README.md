@@ -45,3 +45,4 @@ Join us on this exciting journey to enhance fitness tracking with the power of M
 
 To Get Started:
 Open build Gradle file, you can now test the app.
+![20a0d87a-91f4-486f-97a0-0750d2355ff0](https://github.com/Aries2003/Rep.io/assets/60231411/1ee95eaa-d480-4339-b62d-c6a67cd030f2)
