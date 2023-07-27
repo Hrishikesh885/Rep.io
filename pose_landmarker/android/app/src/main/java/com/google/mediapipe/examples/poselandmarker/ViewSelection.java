@@ -19,7 +19,11 @@ public class ViewSelection extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_selection);
+        if (MainActivity.getexcerise_selection()==1)
+            setContentView(R.layout.activity_view_selection);
+        else if (MainActivity.getexcerise_selection()==2)
+            setContentView(R.layout.squat_view);
+
         OurText= findViewById(R.id.View_selection_var) ;
 
     }

@@ -55,4 +55,8 @@
         <item>Pose Landmarker Lite</item>
         <item>Pose Landmarker Heavy</item>
     </string-array>
+
+    // insert the text for the exercises here
+    <string name="squat">Squat</string>
+    <string name="pushup">Pushup</string>
 </resources>
