@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
     private lateinit var rotationTextView: TextView
     var Angle1: Int = 0
     var Angle2: Int = 0
+    var sangle: Int = 0
     var HipAngle: Int = 0
     private var rep: Int = 0
     private var RepCount: Int = 0
@@ -218,12 +219,12 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
                     if (View_selection == 1) {
                         if (pitchDegrees > 0.00f && rollDegrees > 0) {// LandScape Camera Right side
                             //Front View PushUp
-                            if (HipAngle <= 45) {
+                            if (HipAngle <= 70) {
                                 if (rep == 0) {
                                     repCount += .5f
                                     rep = 1
                                 }
-                            } else if (HipAngle >= 45) {
+                            } else if (HipAngle >= 170) {
                                 if (rep == 1) {
                                     repCount += 0.5f
                                     rep = 0
@@ -245,13 +246,13 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
                             //                    }
                             RepCount = repCount.toInt() // 0
                         } else if (pitchDegrees < 0 && rollDegrees < 0) {// Portrait
-                            if (HipAngle >= 45) {
+                            if (HipAngle >= 70) {
                                 if (rep == 0) {
                                     repCount += .5f
                                     rep = 1
 
                                 }
-                            } else if (HipAngle <= 45) {
+                            } else if (HipAngle <= 170) {
                                 if (rep == 1) {
                                     repCount += 0.5f
                                     rep = 0

@@ -232,15 +232,19 @@ class OverlayView(context: Context?, attrs: AttributeSet?) :
                     (poseLandmarkerResult.landmarks().get(0).get(24).x() * imageWidth * scaleFactor).toDouble(),
                     (poseLandmarkerResult.landmarks().get(0).get(24).y() * imageHeight * scaleFactor).toDouble(),
                     (poseLandmarkerResult.landmarks().get(0).get(24).z() * imageHeight * scaleFactor).toDouble()) // Second coord
+                val R_Ankle = doubleArrayOf(
+                    (poseLandmarkerResult.landmarks().get(0).get(28).x() * imageWidth * scaleFactor).toDouble(),
+                    (poseLandmarkerResult.landmarks().get(0).get(28).y() * imageHeight * scaleFactor).toDouble(),
+                    (poseLandmarkerResult.landmarks().get(0).get(28).z() * imageHeight * scaleFactor).toDouble())
                 val L_Hip = doubleArrayOf(
                     (poseLandmarkerResult.landmarks().get(0).get(23).x() * imageWidth * scaleFactor).toDouble(),
                     (poseLandmarkerResult.landmarks().get(0).get(23).y() * imageHeight * scaleFactor).toDouble(),
                     (poseLandmarkerResult.landmarks().get(0).get(23).z() * imageHeight * scaleFactor).toDouble())//Third coord
+                //val radians3 =  atan2(L_Elbow1[1] - L_Shoulder1[1], L_Elbow1[0] - L_Shoulder1[0])
+                //-atan2(R_Shoulder1[1] - L_Shoulder1[1], R_Shoulder1[0] - L_Shoulder1[0])
+                val radians5 =  atan2(R_Hip[1] - R_Knee[1], R_Hip[0] - R_Knee[0]) - atan2(R_Knee[1] - R_Ankle[1], R_Knee[0] - R_Ankle[0])
 
-                val radians5 =  atan2(L_Hip[1] - R_Hip[1], L_Hip[0] - R_Hip[0])
-                -atan2(R_Knee[1] - R_Hip[1], R_Knee[0] - R_Hip[0])
-
-                HipAngle = (abs(radians3) * 180.0 / PI).toInt()
+                HipAngle = (abs(radians5) * 180.0 / PI).toInt()
                 if (HipAngle > 180)
                 {
                     HipAngle = 360 - HipAngle
