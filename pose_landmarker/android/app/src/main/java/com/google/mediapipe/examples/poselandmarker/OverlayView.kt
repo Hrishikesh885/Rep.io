@@ -254,6 +254,21 @@ class OverlayView(context: Context?, attrs: AttributeSet?) :
                 canvas.drawText(HipAngle.toString(),
                     poseLandmarkerResult.landmarks().get(0).get(24).x() * imageWidth * scaleFactor,
                     poseLandmarkerResult.landmarks().get(0).get(24).y() * imageHeight * scaleFactor,textPaint)
+                canvas.drawText(HipAngle.toString(),
+                    poseLandmarkerResult.landmarks().get(0).get(25).x() * imageWidth * scaleFactor,
+                    poseLandmarkerResult.landmarks().get(0).get(25).y() * imageHeight * scaleFactor,textPaint)
+                canvas.drawText(HipAngle.toString(),
+                    poseLandmarkerResult.landmarks().get(0).get(28).x() * imageWidth * scaleFactor,
+                    poseLandmarkerResult.landmarks().get(0).get(28).y() * imageHeight * scaleFactor,textPaint)
+                canvas.drawText(HipAngle.toString(),
+                    poseLandmarkerResult.landmarks().get(0).get(23).x() * imageWidth * scaleFactor,
+                    poseLandmarkerResult.landmarks().get(0).get(23).y() * imageHeight * scaleFactor,textPaint)
+                canvas.drawText(HipAngle.toString(),
+                    poseLandmarkerResult.landmarks().get(0).get(26).x() * imageWidth * scaleFactor,
+                    poseLandmarkerResult.landmarks().get(0).get(26).y() * imageHeight * scaleFactor,textPaint)
+                canvas.drawText(HipAngle.toString(),
+                    poseLandmarkerResult.landmarks().get(0).get(27).x() * imageWidth * scaleFactor,
+                    poseLandmarkerResult.landmarks().get(0).get(27).y() * imageHeight * scaleFactor,textPaint)
 
                 PoseLandmarker.POSE_LANDMARKS.forEach {
                     canvas.drawLine(
